@@ -1,8 +1,13 @@
 from math import sqrt
 
-a = float(input())
-b = float(input())
-c = float(input())
+while True:
+    try:
+        a = float(input())
+        b = float(input())
+        c = float(input())
+        break # se a conversão for bem-sucedida, sai do loop
+    except ValueError:
+        print("Por favor, insira um número real válido")
 
 delta = pow(b,2) - 4*a*c
 
