@@ -1,6 +1,7 @@
-a = float(input())
-b = float(input())
-c = float(input())
+a, b, c = input().split(" ")
+a = float(a)
+b = float(b)
+c = float(c)
 
 a_2 = a*a
 b_2 = b*b
